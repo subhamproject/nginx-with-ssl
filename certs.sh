@@ -56,5 +56,5 @@ function generate_server_certificate {
 }
 
 # MAIN
-#generate_root_ca
+generate_root_ca
 generate_server_certificate
