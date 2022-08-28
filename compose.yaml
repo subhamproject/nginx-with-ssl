@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  webserver:
+    image: nginx:latest
+    #network_mode: "host"
+    ports:
+      - "443"
+    restart: always
+    volumes:
+      - /root/nginx-ssl/nginx.conf:/etc/nginx/nginx.conf
+      - /root/nginx-ssl:/certs
+      - /root/nginx-ssl/index.html:/etc/nginx/html/index.html

@@ -1,0 +1,11 @@
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+extendedKeyUsage = serverAuth, clientAuth
+subjectAltName = @alt_names
+
+[alt_names]
+IP.1 = 172.42.42.102
+IP.2 =  172.42.42.102
+DNS.1 = nginx.devopsforall.com
+DNS.2 = *.devopsforall.com
